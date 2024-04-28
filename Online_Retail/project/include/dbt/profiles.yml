@@ -1,0 +1,12 @@
+titanic:
+ target: dev
+ outputs:
+  dev:
+    type: bigquery
+    method: service-account
+    keyfile: /usr/local/airflow/include/gcp/service_account.json
+    project: de-project-412918
+    dataset: retail
+    threads: 1
+    timeout_seconds: 300
+    location: US #go to dbt in GCP and check loaction

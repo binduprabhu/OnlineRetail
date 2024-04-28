@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: titanic
+    database: de-project-412918
+
+    tables:
+      - name: raw_titanic
+      - name: country
